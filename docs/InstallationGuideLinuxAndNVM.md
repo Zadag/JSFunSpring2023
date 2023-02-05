@@ -42,7 +42,7 @@ Depending on your Linux distro, you could replacing _brew_ with _apt_, _apt-get_
 
 #### 3. We recommend you install Node.js with NVM
 
-We will be using the latest even numbered version of Node.js, and the default Node.js packages are typically a few major versions behind. A command like e.g. `sudo apt-get install -y nodejs` will not get you the latest LTS version (16.x as of October 2022). NVM will allow you to install the latest LTS version.
+We will be using the latest even numbered version of Node.js, and the default Node.js packages are typically a few major versions behind. A command like e.g. `sudo apt-get install -y nodejs` will not get you the latest LTS version (18.x as of February 2023). NVM will allow you to install the latest LTS version.
 
 # Node Version Manager (NVM)
 
@@ -145,7 +145,7 @@ Restart your terminal. Type `nvm --version`. You should see a version number lik
 
 ## Using NVM
 
-You have NVM installed, but you still need to install Node.js. You will need to have the latest LTS version of Node installed as of October 2022 (16.x).
+You have NVM installed, but you still need to install Node.js. You will need to have the latest LTS version of Node installed as of February 2023 (18.x).
 
 ```
 nvm install --lts
@@ -178,3 +178,7 @@ nvm alias default 15.22.0 # specific version
 ```
 
 See more [usage instructions](https://github.com/nvm-sh/nvm#usage) and ["How to Lock down Your Project’s Node Version Using .Nvmrc Or engines"](https://medium.com/@faith__ngetich/locking-down-a-project-to-a-specific-node-version-using-nvmrc-and-or-engines-e5fd19144245).
+
+## Quokka.js
+
+If you use NVM, Quokka.js may have trouble knowing which Node version to use. If you see an error like "Cannot start node.js process (node)...", please follow [Quokka's Node.js version guide](https://quokkajs.com/docs/configuration.html#nodejs-version).

@@ -22,6 +22,10 @@ When it finishes downloading, double click on the downloaded _.exe_ file and acc
 
 ![Everything but Register Code as an empty editor for support file types](install-screens/vsocde-select-additional-tasks.png)
 
+If you see this security warning at any time during out class, click on _Open_.
+
+![Do you trust the authors of these files](install-screens/vscode-security-warning.png)
+
 Continue with the installer. When it finishes, Visual Studio Code should open. When it does, close out of it for now. We will revisit Visual Studio Code once we finish installing a few dependencies.
 
 ## Git for Windows and Github
@@ -58,7 +62,7 @@ When you finish installing, you should see Git Bash on your computer. Open it, t
 
 Node.js is a JavaScript runtime engine. It allows you to run JavaScript programs outside of Chrome, Safari, Edge or another web browser.
 
-You will need to have the latest LTS version of Node installed as of October 2022 (16.x). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
+You will need to have the latest LTS version of Node installed as of February 2023 (18.x). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
 
 If Node.js is up-to-date, you should update NPM. You can update it with:
 
@@ -66,7 +70,7 @@ If Node.js is up-to-date, you should update NPM. You can update it with:
 npm install -g npm@latest
 ```
 
-To install Node.js, go to https://nodejs.org/en/ and click on the _16.x.x LTS_ version.
+To install Node.js, go to https://nodejs.org/en/ and click on the _18.x.x LTS_ version.
 
 When it finishes downloading, open the downloaded file. Accept the License Agreement and all of the defaults. If you are asked to allow the app to make changes to your device, click on _Yes_.
 
@@ -139,5 +143,4 @@ Paste the following into the JSON file. Do not overwrite any settings that you a
 You should use any modern browser that has good Developer Tools available. (In other words, not Internet Explorer). We recommend Chrome because we will be demonstrating Chrome's tools in class, or Firefox:
 
 - [Chrome](https://www.google.com/chrome/)
-- [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)

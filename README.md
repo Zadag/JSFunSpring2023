@@ -2,27 +2,27 @@
 
 **[CanCode Communities Class](https://cancode.org/)**
 
-**Fall 2022**
+**Spring 2023**
 
 This is the git repository for the class. It will be updated on a class by class basis.
 
 You will submit your assignments by doing pull requests. You will need to create a Github account if you do not have one already. Fork this repository by clicking on the _Fork_ button. Then clone your forked repository with this command, replacing YOUR-USERNAME with your Github username:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/JSFunFall2022.git
+git clone https://github.com/YOUR-USERNAME/JSFunSpring2023.git
 ```
 
 Add the original repository as a remote to your forked repository:
 
 ```bash
-cd JSFunFall2022
-git remote add upstream https://github.com/AlbanyCanCodeCourses/JSFunFall2022.git
+cd JSFunSpring2023
+git remote add upstream https://github.com/AlbanyCanCodeCourses/JSFunSpring2023.git
 git remote -v
-# You should see your upstream set as https://github.com/AlbanyCanCodeCourses/JSFunFall2022.git
-git config pull.rebase true
+# You should see your upstream set as https://github.com/AlbanyCanCodeCourses/JSFunSpring2023.git
+git config pull.rebase false
 ```
 
-At any point, if you see the message "Please tell me who you are" in your command line output, you will need to setup your command line to use your Github account. Follow the instruction underneath where it says "Run", replacing "youremail@example.com" and "Your Name" with your information.
+If git asks you to signin with your username and password, then you will need to follow this guide on [generating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic). Give yourself access to all available scopes. You username will be your Github username and the password will be the token.
 
 Finally, to run the tests for the exercises, you will need to install testing libraries:
 
@@ -36,10 +36,8 @@ Whenever you are ready to submit your work, you will need to [commit your work, 
 
 ## Resources
 
-- Projects: [First Project: Hangman](projects/hangman/ProjectHangman.md) | [Final Project: Document Object Model](projects/final-project/FinalProject.md)
 - Installation Guide: [Mac](docs/InstallationGuideMac.md) | [Windows](docs/InstallationGuideWindows.md) | [Linux](docs/InstallationGuideLinuxAndNVM.md)
 - JavaScript - [MDN](https://developer.mozilla.org/en-US/) (Unofficial JavaScript Manual) | [Tutorials](https://javascript.info/)
-- Command Line: [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) | [Unix Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) | [Unix Cheat Sheet](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/unix_cheatsheet.html)
-- Command Line: [Unix Cheat Sheet](https://www.guru99.com/linux-commands-cheat-sheet.html) | [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) | [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+- Command Line: [Unix Crash Course](https://itnext.io/unix-command-line-crash-course-453e409d62f5) | [Unix Cheat Sheet](https://www.guru99.com/linux-commands-cheat-sheet.html) | [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) | [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 - Git: [Git Commands for Beginners](http://rogerdudler.github.io/git-guide/) | [First Contributions Tutorial](https://github.com/firstcontributions/first-contributions)
 - Visual Studio Code: [Mac Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) | [Windows Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) | [Getting Started](https://code.visualstudio.com/docs/getstarted/introvideos) | [How to use Quokka.js](https://debug.to/1441/quokka-js-extension-for-visual-studio-code)

@@ -32,7 +32,7 @@ xcode-select --install
 
 [Homebrew](https://brew.sh/) is a package manager for Mac, meaning that it will help make installing and managing a lot of command line software easier. We will be installing Node.js with Homebrew to avoid permission issues.
 
-If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see a response like _Homebrew 3.6.2_, then you have it installed. Update homebrew with `brew update` and then you can skip ahead to the next section. If you get a _command not found_ error, you will need to install Homebrew.
+If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see a response like _Homebrew 3.6.20_, then you have it installed. Update homebrew with `brew update` and then you can skip ahead to the next section. If you get a _command not found_ error, you will need to install Homebrew.
 
 To install Homebrew, type this in your terminal:
 
@@ -56,7 +56,7 @@ Git is version control software. It is used for sharing code, combining team mem
 
 You will need to [create a Github account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) if you do not have one.
 
-If you are not sure whether you have it installed, type `git --version` in your terminal. If you see output like this - _git version 2.37.3_ - then congratulations! You already have git installed and you can skip ahead to the next section.
+If you are not sure whether you have it installed, type `git --version` in your terminal. If you see output like this - _git version 2.39.1_ - then congratulations! You already have git installed and you can skip ahead to the next section.
 
 To install git, type this in your terminal:
 
@@ -72,7 +72,7 @@ When it's finished, type `git --version` to confirm that it has installed.
 
 Node.js is a JavaScript runtime engine. It allows you to run JavaScript programs outside of Chrome, Safari, Edge or another web browser.
 
-You will need to have the latest LTS version of Node installed as of October 2022 (16.x). If you already have Node.js installed, type `node -v` in your terminal. If you do not have the latest version, you can do one of the following to things:
+You will need to have the latest LTS version of Node installed as of February 2023 (18.x). If you already have Node.js installed, type `node -v` in your terminal. If you do not have the latest version, you can do one of the following to things:
 
 1. [Upgrade Node.js whatever whatever you originally installed Node.js with.](https://flaviocopes.com/how-to-update-node/) If you have Node.js projects on your computer and you wish to maintain them, this could break your existing projects.
 2. Install multiple version of Node.js on your computer with NVM. See the _Node Version Manager (NVM)_ section of the [Linux Installation Guide](InstallationGuideLinuxAndNVM.md).
@@ -80,7 +80,7 @@ You will need to have the latest LTS version of Node installed as of October 202
 If you do not have Node.js installed, type this is your terminal:
 
 ```bash
-brew install node@16
+brew install node@18
 ```
 
 When it’s finished, type `node -v` to confirm that it is now installed.
@@ -112,6 +112,10 @@ To install, go to https://code.visualstudio.com and click on the _Download Mac U
 When it finishes downloading, double click on the downloaded ZIP file and move Visual Studio Code from your Downloads folder to your Applications folder. You many need to enter your password.
 
 Open Visual Studio Code.
+
+If you see this security warning at any time during out class, click on _Open_.
+
+![Do you trust the authors of these files](install-screens/vscode-security-warning.png)
 
 ### Adding Visual Studio Code to Your Path Variable
 
@@ -173,5 +177,4 @@ Paste the following into the JSON file. Do not overwrite any settings that you a
 You should use any modern browser that has good Developer Tools available. (In other words, not Internet Explorer). We recommend Chrome because we will be demonstrating Chrome's tools in class. Firefox is also a great choice.
 
 - [Chrome](https://www.google.com/chrome/)
-- [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
