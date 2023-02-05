@@ -1,0 +1,23 @@
+{
+  "name": "jsfunspring2023",
+  "version": "1.0.0",
+  "description": "CanCode Communities' JavaScript Fundamentals Class Spring 2023",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha",
+    "testAll": "mocha test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbanyCanCodeCourses/JSFunSpring2023.git"
+  },
+  "author": "CanCode Communities",
+  "homepage": "https://github.com/AlbanyCanCodeCourses/JSFunSpring2023#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1"
+  }
+}
