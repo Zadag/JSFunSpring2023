@@ -32,7 +32,7 @@ npm install
 
 #### On Making Pull Requests
 
-Whenever you are ready to submit your work, you will need to [commit your work, push to your own repository, and then make a pull request](docs/SubmittingAssignments.md).
+Whenever you are ready to submit your work, you will need to [commit your work and push to your own repository](docs/SubmittingAssignments.md).
 
 ## Resources
 
