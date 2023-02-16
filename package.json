@@ -2,9 +2,7 @@
   "name": "jsfunspring2023",
   "version": "1.0.0",
   "description": "CanCode Communities' JavaScript Fundamentals Class Spring 2023",
-  "directories": {
-    "doc": "docs"
-  },
+  "type": "module",
   "scripts": {
     "test": "mocha",
     "testAll": "mocha test/**/*.spec.js"
