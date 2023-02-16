@@ -22,7 +22,7 @@ When it finishes downloading, double click on the downloaded _.exe_ file and acc
 
 ![Everything but Register Code as an empty editor for support file types](install-screens/vsocde-select-additional-tasks.png)
 
-If you see this security warning at any time during out class, click on _Open_.
+If you see this security warning at any time during our class, click on _Open_.
 
 ![Do you trust the authors of these files](install-screens/vscode-security-warning.png)
 
