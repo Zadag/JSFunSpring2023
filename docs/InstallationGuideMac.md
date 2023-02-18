@@ -113,7 +113,7 @@ When it finishes downloading, double click on the downloaded ZIP file and move V
 
 Open Visual Studio Code.
 
-If you see this security warning at any time during out class, click on _Open_.
+If you see this security warning at any time during our class, click on _Open_.
 
 ![Do you trust the authors of these files](install-screens/vscode-security-warning.png)
 

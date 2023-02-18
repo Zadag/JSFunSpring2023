@@ -30,10 +30,6 @@ Finally, to run the tests for the exercises, you will need to install testing li
 npm install
 ```
 
-#### On Making Pull Requests
-
-Whenever you are ready to submit your work, you will need to [commit your work and push to your own repository](docs/SubmittingAssignments.md).
-
 ## Resources
 
 - Installation Guide: [Mac](docs/InstallationGuideMac.md) | [Windows](docs/InstallationGuideWindows.md) | [Linux](docs/InstallationGuideLinuxAndNVM.md)
