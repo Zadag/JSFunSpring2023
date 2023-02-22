@@ -7,3 +7,4 @@ let b = 5; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const difference = b - a;
