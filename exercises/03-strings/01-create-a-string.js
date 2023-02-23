@@ -3,3 +3,4 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const myName = "Kevin";
