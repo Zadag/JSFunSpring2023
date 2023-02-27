@@ -16,3 +16,5 @@ let newLastName = "Fernandez"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const lastName = fullName.split(" ")[1];
+fullName = fullName.replace(lastName, newLastName);
