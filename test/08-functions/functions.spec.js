@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { readConsole } from "../getAnswer.js";
+import { consoleHelper } from "../getAnswer.js";
 import functions from "./functions-test-helper.js";
 const {
   invokeFunction,
@@ -10,6 +10,8 @@ const {
   isEvenOrOdd,
   countNumberOfDigits,
 } = functions;
+
+const readPrintGreeting = consoleHelper(printGreeting);
 
 describe("8. Functions", () => {
   describe("01-invoke-function", () => {
@@ -24,12 +26,14 @@ describe("8. Functions", () => {
   });
   describe("02-print-greeting", () => {
     it('should contain a function called "printGreeting" in arrow syntax', () => {
-      expect(printGreeting).to.be.a("function");
-      expect(printGreeting.toString().includes("=>")).to.equal(true);
+      const greeter = readPrintGreeting(console.log);
+      expect(greeter).to.be.a("function");
+      expect(greeter.toString().includes("=>")).to.equal(true);
     });
     it('"printGreeting" should print "Hello ______!" with console.log', () => {
-      const greeting = readConsole(() => printGreeting("Tim"));
-      expect(greeting).to.equal("Hello Tim!\n");
+      let output;
+      readPrintGreeting((value) => (output = value))("Tim");
+      expect(output).to.equal("Hello Tim!");
     });
   });
   describe("03-return-greeting", () => {

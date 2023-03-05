@@ -22,22 +22,13 @@ const getAnswer = (filePath) => {
   }
 };
 
-const readConsole = (callback) => {
-  /**
-   * @source https://gajus.medium.com/capturing-stdout-stderr-in-node-js-using-domain-module-3c86f5b1536d
-   */
-  let output = "";
-  const originalStdoutWrite = process.stdout.write.bind(process.stdout);
-  process.stdout.write = (chunk, encoding, callback) => {
-    if (typeof chunk === "string") {
-      output += chunk;
-    }
-
-    return originalStdoutWrite(chunk, encoding, callback);
-  };
-  callback();
-  process.stdout.write = originalStdoutWrite;
-  return output;
+const consoleHelper = (fn = function () {}) => {
+  const newFn = eval(`((callback) => {
+    try {
+      return ${fn.toString().replace(/console.log/g, "callback")}
+    } catch (err) {}
+  });`);
+  return newFn;
 };
 
-export { getAnswer, readConsole };
+export { getAnswer, consoleHelper };
