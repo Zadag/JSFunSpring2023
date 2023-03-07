@@ -6,6 +6,10 @@ You are developer for a calculator company. A bug is reported on one of your web
 
 Website: https://roaring-tartufo-39ff37.netlify.app/
 
+You will need to use your developer tools to complete this problem.
+
+- [Open Chrome DevTools](https://developer.chrome.com/docs/devtools/open/)
+
 ## Expected Results
 
 1. User enters two numbers into the input boxes.
