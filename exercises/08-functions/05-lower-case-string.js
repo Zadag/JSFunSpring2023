@@ -16,3 +16,8 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const lowerCaseString = (str) => {
+  return typeof str === "string" ? str.toLowerCase() : undefined;
+};
+
+// Not included in spec but this test will fail if undefined is not returned

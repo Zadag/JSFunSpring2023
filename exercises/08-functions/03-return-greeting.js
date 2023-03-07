@@ -13,3 +13,4 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const returnGreeting = (name) => `Hello ${name}!`;
