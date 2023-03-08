@@ -91,5 +91,8 @@ describe("8. Functions", () => {
     it('"countNumberOfDigits" should count the number of digits', () => {
       expect(countNumberOfDigits(5000)).to.equal(4);
     });
+    it('"countNumberOfDigits" should work with negative integers', () => {
+      expect(countNumberOfDigits(-5000)).to.equal(4);
+    });
   });
 });
