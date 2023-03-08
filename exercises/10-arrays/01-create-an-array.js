@@ -4,3 +4,4 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const restaurants = ["Son of egg", "Tanpopo", "Olive Garden"];
