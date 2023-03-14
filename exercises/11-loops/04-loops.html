@@ -62,13 +62,17 @@
 
         const addToTable = (place, name) => {
           const htmlString = `<tr><td>${place}</td><td>${name}</td></tr>`;
-          tableBody.insertAdjacentHTML('beforeend', htmlString);
+          tableBody.insertAdjacentHTML("beforeend", htmlString);
         };
 
         // Right now, this only adds the first person in the "results" array to the table.
         // Create a loop here and use this function within the loop
         // to add every person's name to the table.
-        addToTable(1, results[0]); // Change me. This should be inside your loop.
+        for (let i = 0; i < results.length; i++) {
+          addToTable(i, results[i]);
+        }
+
+        //addToTable(1, results[0]); // Change me. This should be inside your loop.
       })();
     </script>
   </body>

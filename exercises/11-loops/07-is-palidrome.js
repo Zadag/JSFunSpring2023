@@ -11,3 +11,16 @@ let string = "racecar";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// const isPalindrome = ((str) => {
+//   let isPal = true;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== str[str.length - (i + 1)]) isPal = false;
+//   }
+//   return isPal;
+// })(string);
+
+const isPalindrome = ((str) => {
+  const reversed = str.split("").reverse().join("");
+  return reversed === str ? true : false;
+})(string);

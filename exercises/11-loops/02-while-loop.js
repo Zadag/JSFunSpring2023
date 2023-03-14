@@ -8,3 +8,9 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let count = 10;
+
+while (count <= 100) {
+  console.log(count);
+  count += 10;
+}

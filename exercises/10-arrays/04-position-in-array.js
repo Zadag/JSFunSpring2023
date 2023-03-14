@@ -19,4 +19,5 @@ let results = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
 const place = results.indexOf("Jian Hou") + 1;
