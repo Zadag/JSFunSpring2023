@@ -17,3 +17,5 @@ let student = {
 // WRITE YOUR ANSWER BELOW THIS LINE
 student.name = "Kevin Browne";
 student.skills.push("CSS");
+
+//student.skills = [...student.skills, "CSS"];
