@@ -24,3 +24,5 @@ const isPalindrome = ((str) => {
   const reversed = str.split("").reverse().join("");
   return reversed === str ? true : false;
 })(string);
+
+// One liner for fun // const isPalindrome = ((str) => str.split("").reverse().join("") === str ? true: false)(string)
