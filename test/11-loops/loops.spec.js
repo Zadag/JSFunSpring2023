@@ -16,7 +16,7 @@ describe("10. Loops", () => {
   });
 
   describe("02-while-loop", () => {
-    it("should log each value in an array with console.log", () => {
+    it("should log each of these numbers, one-by-one: 10, 20, 30, 50, 60, 70, 80, 90, 100", () => {
       let output = [];
       logWithWhile((item) => output.push(item));
       const expected = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
