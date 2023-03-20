@@ -11,3 +11,7 @@ let error = "Username already exists."; // When the test runs, this could also b
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+// const errorMessage =
+//  error && typeof error === "string" ? error : "An unexpected error occurred";
+
+const errorMessage = error || "An unexpected error occurred";
