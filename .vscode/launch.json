@@ -160,5 +160,18 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "14. More Conditionals",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/14-more-conditionals/more-conditionals.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
   ]
 }
