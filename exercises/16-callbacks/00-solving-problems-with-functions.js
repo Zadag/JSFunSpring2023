@@ -6,6 +6,7 @@
 
 const returnAnswer = (personName) => {
   // WRITE YOUR ANSWER IN HERE
+  return personName;
 };
 
 // Uncomment me to test in Quokka

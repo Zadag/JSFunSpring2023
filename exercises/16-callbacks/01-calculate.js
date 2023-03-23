@@ -28,6 +28,7 @@ const subtract = (num1, num2) => {
 
 const calculate = (num1, num2, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  return callback(num1, num2);
 };
 
 // Uncomment me to test in Quokka

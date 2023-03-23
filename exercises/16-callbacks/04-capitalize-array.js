@@ -20,6 +20,12 @@ const capitalizeString = (str) => {
  */
 const capitalizeArray = (originalArray, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  const result = [];
+  originalArray.forEach((element) => {
+    const capitalizedString = callback(element);
+    result.push(capitalizedString);
+  });
+  return result;
 };
 
 // Uncomment me to test your answer in Quokka
