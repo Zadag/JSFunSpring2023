@@ -186,5 +186,18 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "17. For Each",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/17-for-each/for-each.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
   ]
 }
