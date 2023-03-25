@@ -18,14 +18,14 @@ const createButton = (text) => {
  */
 
 // CHANGE SOMETHING WITH THE FUNCTION DECLARATION
-const createCallToAction = (clickableText) => {
-  // CHANGE SOMETHING INSIDE THIS FUNCTION
+const createCallToAction = (clickableText, callback) => {
   return (
     "<div>Limited Time: Members Save 30%<br>" +
-    createLink(clickableText) +
+    callback(clickableText) +
     "</div>"
   );
 };
+
 
 // CHANGE SOMETHING HERE TOO so that creates a link
 console.log(createCallToAction("Book Now"));
