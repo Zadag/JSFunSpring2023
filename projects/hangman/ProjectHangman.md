@@ -1,6 +1,6 @@
 # First Project: Hangman
 
-**First Submission Due April 17, 20223 End Of Day**
+**First Submission Due April 17, 2023 End Of Day**
 
 For your first project, you will be creating the classic game, Hangman, using Node.js. Hangman is a word game where the computer picks a word or phrase, and the player must guess what the word or phrase is, letter-by-letter. If she make too many guesses, the hangman is "hung" and she will lose.
 
