@@ -12,4 +12,24 @@
  */
 (function () {
   // Put your answers in here
+  const firstLi = document.querySelector("li");
+  firstLi.style.backgroundColor = "blue";
+
+  const secondLi = document.querySelector("#myId");
+  secondLi.style.backgroundColor = "red";
+
+  const warnings = document.querySelectorAll(".bg-warning");
+  warnings.forEach((warning) => {
+    console.log(warning);
+    warning.style.backgroundColor = "purple";
+  });
+
+  const targetMe = document.querySelector(".target-me");
+  targetMe.addEventListener("click", () => console.log("hi"));
+
+  const socialMedia = document.querySelectorAll(".sm");
+  socialMedia.forEach((social) => (social.style.backgroundColor = "green"));
+
+  const row = document.querySelectorAll(".bg-success > div");
+  row.forEach((child) => (child.style.color = "red"));
 })();
