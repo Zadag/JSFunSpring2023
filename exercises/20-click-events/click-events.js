@@ -17,4 +17,15 @@
    * 2. Change the text to say e.g. "Loading ..." once it is clicked.
    */
   // Write your answer here
+  const alertMe = document.querySelector(".alert-me");
+  const chargeCard = document.querySelector(".charge-card");
+
+  alertMe.addEventListener("click", () => {
+    alert("I've been alerted!");
+  });
+
+  chargeCard.addEventListener("click", () => {
+    chargeCard.disabled = true;
+    chargeCard.textContent = "Loading...";
+  });
 })();
