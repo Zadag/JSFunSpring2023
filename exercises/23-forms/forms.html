@@ -38,13 +38,13 @@
         <!-- Capture what the user is type here -->
         <input
           type="text"
-          class="form-control mb-3"
+          class="form-control mb-3 mystery-text"
           placeholder="Enter mystery text here"
           aria-label="Enter mystery text here"
         />
 
         <!-- Display whatever text the user types in the textbox above inside the <div></div> -->
-        <div class="card bg-warning"></div>
+        <div class="input-text card bg-warning"></div>
       </div>
     </section>
 
@@ -57,22 +57,24 @@
               type="search"
               placeholder="Search for oceans near Albany, NY"
               aria-label="Search for oceans near Albany, NY"
-              class="form-control"
+              class="form-control search-input"
             />
             <div class="input-group-append">
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn btn-success search-button" type="submit">
+                Search
+              </button>
             </div>
           </div>
         </form>
 
         <!-- Display "No results for ___ found" inside of this <p></p> -->
-        <p class="text-white"></p>
+        <p class="text-white search-result"></p>
       </div>
     </section>
 
     <section class="bg-light pt-4 pb-4 flex-fill">
       <div class="container d-flex justify-content-center">
-        <form>
+        <form class="check-form">
           <div class="form-inline">
             <div class="form-check form-check-inline">
               <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
@@ -82,7 +84,9 @@
               >
             </div>
 
-            <button type="submit" class="btn btn-primary">Continue</button>
+            <button type="submit" class="btn btn-primary continue-button">
+              Continue
+            </button>
           </div>
 
           <!-- Only display me if the user did not agree to the terms and conditions -->

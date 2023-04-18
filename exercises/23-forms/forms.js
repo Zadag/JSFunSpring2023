@@ -1,3 +1,5 @@
+//const { doc } = require("mocha/lib/reporters");
+
 (function () {
   /**
    * You have three challenges to solve below with Vanilla JavaScript.
@@ -10,6 +12,11 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  const input = document.querySelector(".mystery-text");
+  const renderDiv = document.querySelector(".input-text");
+  input.addEventListener("input", () => {
+    renderDiv.textContent = input.value;
+  });
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
    *
@@ -23,6 +30,15 @@
    * and you must prevent the page from refreshing when the form is submitted.
    */
   // Write your answer here
+  const searchBtn = document.querySelector(".search-button");
+  const searchInput = document.querySelector(".search-input");
+  const searchResult = document.querySelector(".search-result");
+  const form = document.querySelector(".form-group");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    searchResult.textContent = `No results for ${searchInput.value} were found`;
+    if (!searchInput.value) searchResult.textContent = "No results were found";
+  });
   /**
    * Problem 3: Agree to the terms and conditions
    *
@@ -34,4 +50,27 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+  const checkbox = document.querySelector(".form-check-input");
+  const checkLabel = document.querySelector(".form-check-label");
+  const warning = document.querySelector(".text-danger");
+  const success = document.querySelector(".text-success");
+  const checkForm = document.querySelector(".check-form");
+
+  success.style.display = "none";
+
+  checkbox.addEventListener("click", () => {
+    if (checkbox.checked) {
+      warning.style.display = "none";
+      checkLabel.classList.remove("is-invalid");
+    } else {
+      warning.style.display = "inline-block";
+      success.style.display = "none";
+      checkLabel.classList.add("is-invalid");
+    }
+  });
+
+  checkForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (checkbox.checked) success.style.display = "inline-block";
+  });
 })();
