@@ -13,4 +13,22 @@
    * You can also make the "x" icon dismiss the notification.
    */
   // Write your answer here
+  const planBanner = document.querySelector("#plan-banner");
+  planBanner.style.color = "aquamarine";
+
+  const planContainer = document.querySelector(".pricing-table");
+  // planContainer.addEventListener("click", (e) => {
+  //   const planName = e.target.dataset.plan;
+  //   if (planName) {
+  //     planBanner.textContent = `Thank you for purchasing the ${planName} plan!`;
+  //   }
+  // });
+
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const planName = button.dataset.plan;
+      planBanner.textContent = `Thank you for purchasing the ${planName} plan!`;
+    });
+  });
 })();
