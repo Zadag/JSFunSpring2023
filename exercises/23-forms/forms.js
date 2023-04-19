@@ -61,11 +61,11 @@
   checkbox.addEventListener("click", () => {
     if (checkbox.checked) {
       warning.style.display = "none";
-      checkLabel.classList.remove("is-invalid");
+      checkbox.classList.remove("is-invalid");
     } else {
       warning.style.display = "inline-block";
       success.style.display = "none";
-      checkLabel.classList.add("is-invalid");
+      checkbox.classList.add("is-invalid");
     }
   });
 
