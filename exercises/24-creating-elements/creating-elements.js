@@ -44,7 +44,7 @@ const startBubbling = () => {
   setInterval(() => {
     if (document.body.children.length > maxBubblesOnPage) return; // prevent infinite bubbles
     createBubble();
-  }, 2000);
+  }, 1700);
 };
 
 //Add a button to begin
