@@ -8,7 +8,7 @@ const randomInt = (min, max) => {
 const createBubble = () => {
   // constants to draw bubbles
   const xOffset = randomInt(10, 90); // xOrigin will be used as a percentage
-  const radius = randomInt(50, 150); // radius will be pixels
+  const radius = randomInt(50, 110); // radius will be pixels
   const shineHeight = radius * 0.4;
   const shineWidth = radius * 0.14;
   const shineYOffset = radius * 0.26;

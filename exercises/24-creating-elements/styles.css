@@ -49,7 +49,7 @@ h1 {
     transform: translate(200%, -30vh);
   }
   66% {
-    transform: translate(0%, -60vh);
+    transform: translate(75%, -60vh);
   }
   to {
     transform: translate(150%, -120vh);
@@ -67,7 +67,7 @@ h1 {
     transform: translate(-200%, -60vh);
   }
   75% {
-    transform: translate(0, -80vh);
+    transform: translate(-120%, -80vh);
   }
   to {
     transform: translate(-150%, -120vh);
