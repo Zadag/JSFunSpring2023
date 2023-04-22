@@ -42,7 +42,15 @@ const createBubble = () => {
 // Spawn bubbles on an interval
 const startBubbling = () => {
   setInterval(() => {
-    if (document.body.children.length > maxBubblesOnPage) return; // prevent infinite bubbles
+    const bubbles = Array.from(document.body.children).filter((element) => {
+      return element.classList.contains("bubble");
+    });
+
+    // Remove oldest bubble from the DOM to keep the scene changing
+    if (bubbles.length > maxBubblesOnPage) {
+      bubbles.shift().remove();
+      return;
+    }
     createBubble();
   }, 1700);
 };
