@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  background-image: radial-gradient(#637fc1, #70a3f0, #8f94f8);
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  background: linear-gradient(to left, #5d86c4, #9699d8);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bubble:after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 13px;
+  left: 35px;
+  height: 20px;
+  width: 7px;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+}

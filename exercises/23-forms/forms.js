@@ -51,7 +51,6 @@
    */
   // Write your answer here
   const checkbox = document.querySelector(".form-check-input");
-  const checkLabel = document.querySelector(".form-check-label");
   const warning = document.querySelector(".text-danger");
   const success = document.querySelector(".text-success");
   const checkForm = document.querySelector(".check-form");
