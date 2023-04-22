@@ -8,26 +8,122 @@ body {
   overflow: hidden;
 }
 
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  user-select: none;
+}
+
 .bubble {
   position: absolute;
   top: 100%;
-  background-color: white;
   background: linear-gradient(to left, #5d86c4, #9699d8);
-  height: 50px;
-  width: 50px;
+  height: var(--radius);
+  width: var(--radius);
+  left: var(--x-offset);
   border-radius: 50%;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, var(--shadow-depth));
+  animation: var(--animation-number) 5s infinite linear;
+  cursor: pointer;
 }
 
 .bubble:after {
   content: "";
   position: relative;
   display: block;
-  top: 13px;
-  left: 35px;
-  height: 20px;
-  width: 7px;
+  top: var(--shine-y-offset);
+  left: var(--shine-x-offset);
+  height: var(--shine-height);
+  width: var(--shine-width);
   border-radius: 50%;
   background: white;
   overflow: hidden;
+}
+
+@keyframes float1 {
+  from {
+    transform: 110vh;
+  }
+  33% {
+    transform: translate(200%, -30vh);
+  }
+  66% {
+    transform: translate(0%, -60vh);
+  }
+  to {
+    transform: translate(150%, -120vh);
+  }
+}
+
+@keyframes float2 {
+  from {
+    transform: 110vh;
+  }
+  25% {
+    transform: translate(-150%, -30vh);
+  }
+  50% {
+    transform: translate(-200%, -60vh);
+  }
+  75% {
+    transform: translate(0, -80vh);
+  }
+  to {
+    transform: translate(-150%, -120vh);
+  }
+}
+
+@keyframes float3 {
+  from {
+    transform: 110vh;
+  }
+  25% {
+    transform: translate(75%, -22vh);
+  }
+  50% {
+    transform: translate(20%, -55vh);
+  }
+  75% {
+    transform: translate(-30%, -88vh);
+  }
+  to {
+    transform: translate(0, -120vh);
+  }
+}
+
+@keyframes float4 {
+  from {
+    transform: 110vh;
+  }
+  25% {
+    transform: translate(136%, -35vh);
+  }
+  50% {
+    transform: translate(-25%, -60vh);
+  }
+  75% {
+    transform: translate(25%, -87vh);
+  }
+  to {
+    transform: translate(0%, -120vh);
+  }
+}
+
+@keyframes float5 {
+  from {
+    transform: 110vh;
+  }
+  25% {
+    transform: translate(-150%, -20vh);
+  }
+  50% {
+    transform: translate(0%, -66vh);
+  }
+  75% {
+    transform: translate(-25%, -91vh);
+  }
+  to {
+    transform: translate(25%, -120vh);
+  }
 }
