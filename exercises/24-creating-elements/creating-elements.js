@@ -35,11 +35,24 @@ const createBubble = () => {
   circle.addEventListener("click", () => {
     circle.remove();
     bubblesPopped += 1;
-    document.querySelector("h1").textContent = bubblesPopped;
+    document.querySelector("h2").textContent = bubblesPopped;
   });
 };
 
-setInterval(() => {
-  if (document.body.children.length > maxBubblesOnPage) return; // prevent infinite bubbles
-  createBubble();
-}, 2000);
+// Spawn bubbles on an interval
+const startBubbling = () => {
+  setInterval(() => {
+    if (document.body.children.length > maxBubblesOnPage) return; // prevent infinite bubbles
+    createBubble();
+  }, 2000);
+};
+
+//Add a button to begin
+const btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+  btn.remove();
+  const h2 = document.createElement("h2");
+  document.querySelector("body").appendChild(h2);
+  h2.textContent = 0;
+  startBubbling();
+});

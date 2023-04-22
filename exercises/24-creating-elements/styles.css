@@ -2,17 +2,27 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: radial-gradient(#637fc1, #70a3f0, #8f94f8);
   padding-left: 10%;
   padding-right: 10%;
   overflow: hidden;
 }
 
-h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
+h2 {
   user-select: none;
+  font-size: 56px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  height: 6rem;
+  width: 12rem;
+  background-color: #8f94f8;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .bubble {
@@ -97,7 +107,7 @@ h1 {
     transform: 110vh;
   }
   25% {
-    transform: translate(136%, -35vh);
+    transform: translate(60%, -35vh);
   }
   50% {
     transform: translate(-25%, -60vh);
