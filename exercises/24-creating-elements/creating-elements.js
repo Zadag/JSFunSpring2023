@@ -1,9 +1,6 @@
 let bubblesPopped = 0;
 let bubblesOnPage = 0;
-const bubbleLimiter = 8;
-
-// 3: delay is 5000
-// 4: delay is
+const bubbleLimiter = 5;
 
 const randomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -61,7 +58,7 @@ const startBubbling = () => {
     const bubble = createBubble();
     removeExtraBubble(bubble);
     console.log(bubbles.length);
-  }, 1700);
+  }, 900);
 };
 
 //Add a button to begin
