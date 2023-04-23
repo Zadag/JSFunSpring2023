@@ -1,5 +1,9 @@
+// I am pretty comfortable with DOM manipulation through JavaScript so I spent some time
+// working on CSS features I haven't worked with before.  In this exercise I used animations, variables,
+// and gradients to create this cookie clicker style bubble popping app.  If I have time tomorrow
+// I might turn this into a tower defense game.
+
 let bubblesPopped = 0;
-let bubblesOnPage = 0;
 const bubbleLimiter = 5;
 
 const randomInt = (min, max) => {
