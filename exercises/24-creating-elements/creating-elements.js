@@ -1,5 +1,9 @@
 let bubblesPopped = 0;
-const maxBubblesOnPage = 25;
+let bubblesOnPage = 0;
+const bubbleLimiter = 8;
+
+// 3: delay is 5000
+// 4: delay is
 
 const randomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -37,6 +41,13 @@ const createBubble = () => {
     bubblesPopped += 1;
     document.querySelector("h2").textContent = bubblesPopped;
   });
+
+  return circle;
+};
+
+const removeExtraBubble = (bubble) => {
+  // This timeout insures bubbles are removed off screen
+  setTimeout(() => bubble.remove(), 5000 * bubbleLimiter);
 };
 
 // Spawn bubbles on an interval
@@ -46,12 +57,10 @@ const startBubbling = () => {
       return element.classList.contains("bubble");
     });
 
-    // Remove oldest bubble from the DOM to keep the scene changing
-    if (bubbles.length > maxBubblesOnPage) {
-      bubbles.shift().remove();
-      return;
-    }
-    createBubble();
+    // Create new bubble and set it for future removal
+    const bubble = createBubble();
+    removeExtraBubble(bubble);
+    console.log(bubbles.length);
   }, 1700);
 };
 
