@@ -50,9 +50,7 @@ const removeExtraBubble = (bubble) => {
 // Spawn bubbles on an interval
 const startBubbling = () => {
   setInterval(() => {
-    const bubbles = Array.from(document.body.children).filter((element) => {
-      return element.classList.contains("bubble");
-    });
+    const bubbles = Array.from(document.querySelectorAll(".bubble"));
 
     // Create new bubble and set it for future removal
     const bubble = createBubble();
