@@ -18,28 +18,30 @@
    * You must make two AJAX request to solve this problem.
    */
 
-  const charObject = {};
-
   try {
     const response = await axios("https://rickandmortyapi.com/api/character");
     const characters = response.data.results;
-
-    // build an object cooresponding character names to image urls
-    characters.forEach((character) => {
-      charObject[character.name] = character.image;
-    });
+    console.log(characters);
 
     const select = document.querySelector("select");
 
     characters.forEach((character) => {
       const option = document.createElement("option");
       option.text = character.name;
+      option.value = character.id;
       select.add(option);
     });
 
-    select.addEventListener("change", (e) => {
+    select.addEventListener("change", async () => {
       const img = document.querySelector("img");
-      img.src = charObject[e.target.value];
+      const character = await axios(
+        `https://rickandmortyapi.com/api/character/${select.value.toString()}`
+      );
+
+      img.src = character.data.image;
+
+      const h1 = document.querySelector("h1");
+      h1.textContent = character.data.name;
     });
   } catch {
     console.error(error);
