@@ -21,7 +21,6 @@
   try {
     const response = await axios("https://rickandmortyapi.com/api/character");
     const characters = response.data.results;
-    console.log(characters);
 
     const select = document.querySelector("select");
 
