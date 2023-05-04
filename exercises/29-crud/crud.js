@@ -112,7 +112,6 @@
   };
 
   const renderProducts = (products) => {
-    console.log("rendering projects", products);
     const table = document.querySelector("#productTableBody");
     // remove existing products
     while (table.firstChild) {
