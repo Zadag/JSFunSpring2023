@@ -3,43 +3,7 @@ const PRODUCTS_API_BASE_URL = "https://dummyjson.com/products";
 const productForm = document.getElementById("productForm");
 const productTableBody = document.getElementById("productTableBody");
 
-productForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(productForm);
-  const productData = {
-    title: formData.get("title"),
-    description: formData.get("description"),
-    price: parseFloat(formData.get("price")),
-    discountPercentage: parseFloat(formData.get("discountPercentage")),
-    rating: parseFloat(formData.get("rating")),
-    stock: parseInt(formData.get("stock"), 10),
-    brand: formData.get("brand"),
-    category: formData.get("category"),
-  };
-
-  fetch(PRODUCTS_API_BASE_URL + "/add", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(productData),
-  })
-    .then((res) => res.json())
-    .then((product) => {
-      //console.log(products)
-      renderProduct(product);
-      productForm.reset();
-    })
-    .catch((error) => console.error(error));
-});
-
-fetch(PRODUCTS_API_BASE_URL)
-  .then((res) => res.json())
-  .then((products) => {
-    products.products.forEach((product) => renderProduct(product));
-  })
-  .catch((error) => console.error(error));
-
-function renderProduct(product) {
+const renderProduct = (product) => {
   console.log(product);
 
   if (Object.keys(product).length > 0) {
@@ -80,4 +44,40 @@ function renderProduct(product) {
       })
       .catch((error) => console.error(error));
   });
-}
+};
+
+productForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(productForm);
+  const productData = {
+    title: formData.get("title"),
+    description: formData.get("description"),
+    price: parseFloat(formData.get("price")),
+    discountPercentage: parseFloat(formData.get("discountPercentage")),
+    rating: parseFloat(formData.get("rating")),
+    stock: parseInt(formData.get("stock"), 10),
+    brand: formData.get("brand"),
+    category: formData.get("category"),
+  };
+
+  fetch(PRODUCTS_API_BASE_URL + "/add", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(productData),
+  })
+    .then((res) => res.json())
+    .then((product) => {
+      //console.log(products)
+      renderProduct(product);
+      productForm.reset();
+    })
+    .catch((error) => console.error(error));
+});
+
+fetch(PRODUCTS_API_BASE_URL)
+  .then((res) => res.json())
+  .then((products) => {
+    products.products.forEach((product) => renderProduct(product));
+  })
+  .catch((error) => console.error(error));
