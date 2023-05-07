@@ -32,7 +32,7 @@ npm install
 
 ## Resources
 
-- Projects: [First Project - Hangman](projects/hangman/ProjectHangman.md)
+- Projects: [First Project - Hangman](projects/hangman/ProjectHangman.md) | [Final Project](projects/final-project/FinalProject.md)
 - Installation Guide: [Mac](docs/InstallationGuideMac.md) | [Windows](docs/InstallationGuideWindows.md) | [Linux](docs/InstallationGuideLinuxAndNVM.md)
 - JavaScript - [MDN](https://developer.mozilla.org/en-US/) (Unofficial JavaScript Manual) | [Tutorials](https://javascript.info/)
 - Command Line: [Unix Crash Course](https://itnext.io/unix-command-line-crash-course-453e409d62f5) | [Unix Cheat Sheet](https://www.guru99.com/linux-commands-cheat-sheet.html) | [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) | [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
