@@ -1,6 +1,6 @@
 # Final Project - APIs
 
-**Due Date: January 13, 2022 11:59pm**
+**Due Date: May 26, 2023 11:59pm**
 
 For your final project, you will be leverage an API (or APIs) to display dynamic content onto a webpage. You will choose between one of these ideas below, or come up with your own idea that uses a public API.
 
@@ -94,7 +94,7 @@ spread.js:25 Uncaught (in promise) Error: Network Error
 
 Test your API out in the Chrome, Firefox, Safari, Edge or another web browser before committing to an API. An API request may work fine with Postman, but not in a web browser.
 
-[You can read more about CORS here](https://www.codecademy.com/articles/what-is-cors).
+[You can read more about CORS here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 
 ## Project Ideas
 
@@ -173,7 +173,7 @@ You are free to pursue another project idea, as long as it:
 - You use at least one API. (You can browse [AnyAPI](https://any-api.com/) or [RapidAPI](https://rapidapi.com/hub) to discover other APIs.)
 - You are able to realistically complete the project or at least have something presentable to employers by the deadline.
 
-Please let Jamal and Matina known by **January 3rd**. You must message them over Slack and provide them with your API's documentation. If they do not approve of your project, you will have to work with one of the suggested ideas above.
+Please let Jamal and Matina known by **May 17**. You must emails them and provide them with your API's documentation. If they do not approve of your project, you will have to work with one of the suggested ideas above.
 
 ## Github Repository and Pages
 
@@ -223,7 +223,7 @@ Your project does not have to be 100% complete, but it does have to be presentab
 
 ## Graduation and Project Showcase
 
-There will be a virtual graduation and networking ceremony on February 17th. You will receive an email from CanCode Communities with more information about this as we get closer to the date. You will be ask present your project, so it should be ready to share by the project due date.
+There will be a virtual graduation and networking ceremony. You will receive an email from CanCode Communities with more information about this as we get closer to the date. You will be ask present your project, so it should be ready to share by the project due date.
 
 ## Project Help
 
