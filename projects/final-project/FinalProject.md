@@ -6,6 +6,8 @@ For your final project, you will be leverage an API (or APIs) to display dynamic
 
 1. A Movie Website
 2. A Nutrition Website
+3. Giphy CRUD App
+4. Your Own Idea
 
 ## Project Goals
 
@@ -25,7 +27,7 @@ This project will put together these topics that were covered in class:
 You must meet these requirements in order to pass.
 
 - Your website should not crash at any point.
-- Your project must make at least two asynchronous API call.
+- Your project must make at least two asynchronous API calls.
 - You must use an asynchronous library or API that we covered in class (Axios, Fetch and/or Async & Await).
 - You should display the data returned from an API on the user's screen in some fashion. For example, your API could return the name and image URLs of social media followers of a given person. You could then display the name and avatar of each follower on the page.
 - You must handle two or more events.
@@ -163,6 +165,53 @@ The Nutrition Analysis API is different from the other Edamam APIs because it is
 ![How to make a JSON request to the Nutrition Analysis API in Thunder Client](nutrition-analysis-thunderclient.jpg)
 
 ![How to make a JSON request to the Nutrition Analysis API in Postman](nutrition-analysis-postman.png)
+
+### 3. GIF Collection Manager with GIPHY API
+
+![GIF Collection Manager](gifphy.png)
+
+Create a web app that allows users to manage their GIF collection using the GIPHY API. Users will be able to add, view, edit, and delete GIFs in their collection.
+
+GIPHY provides a powerful [API](https://developers.giphy.com/docs/api/) for developers to interact with their platform. You will have to [signup](https://developers.giphy.com/dashboard/) for an API key to access GIPHY's API features.
+
+#### Project Requirements
+
+If you choose this project, in addition to the requirements above, your project must also include the following features:
+
+1. Add new GIFs to the collection by entering a title and a URL.
+2. View a list of all GIFs in the collection.
+3. Edit the title and/or URL of an existing GIF in the collection.
+4. Delete a GIF from the collection.
+5. Display error messages when something goes wrong.
+6. Integration with the GIPHY API.
+7. Authentication with the GIPHY API using an API key.
+8. Create new GIFs using the GIPHY API's "create" endpoint.
+9. Retrieve a list of all GIFs using the GIPHY API's "search" endpoint.
+
+#### Example API Requests
+
+Replace `API_KEY` with your actual API key in the following examples:
+
+<pre>
+https://api.giphy.com/v1/gifs/search?api_key=API_KEY&q=funny&limit=25&offset=0&rating=g&lang=en
+</pre>
+
+##### Search GIFs
+
+Replace `API_KEY` with your actual API key in the following examples:
+
+<pre>
+https://api.giphy.com/v1/gifs/search?api_key=API_KEY&q=funny&limit=25&offset=0&rating=g&lang=en
+</pre>
+
+##### UPDATE AND DELETE
+
+Updating and deleting GIFs are not supported by the GIPHY API as the uploaded GIFs become part of the GIPHY platform. However, you can manage the updates and deletions within your app's collection.
+
+##### API DOCS
+
+For more information, refer to the [GIPHY API](https://developers.giphy.com/docs/api/)
+For more examples, refer to the [GIPHY EXPLORER](https://developers.giphy.com/explorer/)
 
 ### 3. Your Own Idea
 
