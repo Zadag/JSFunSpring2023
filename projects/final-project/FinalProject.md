@@ -213,7 +213,7 @@ Updating and deleting GIFs are not supported by the GIPHY API as the uploaded GI
 For more information, refer to the [GIPHY API](https://developers.giphy.com/docs/api/)
 For more examples, refer to the [GIPHY EXPLORER](https://developers.giphy.com/explorer/)
 
-### 3. Your Own Idea
+### 4. Your Own Idea
 
 You are free to pursue another project idea, as long as it:
 
