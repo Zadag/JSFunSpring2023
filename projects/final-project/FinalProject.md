@@ -24,7 +24,8 @@ This project will put together these topics that were covered in class:
 
 You must meet these requirements in order to pass.
 
-- Your project must make at least one asynchronous API call.
+- Your website should not crash at any point.
+- Your project must make at least two asynchronous API call.
 - You must use an asynchronous library or API that we covered in class (Axios, Fetch and/or Async & Await).
 - You should display the data returned from an API on the user's screen in some fashion. For example, your API could return the name and image URLs of social media followers of a given person. You could then display the name and avatar of each follower on the page.
 - You must handle two or more events.
@@ -66,8 +67,6 @@ You must meet these requirements in order to pass.
     window.toTitleCase = toTitleCase;
   })();
   ```
-
-- Your website should not crash at any point.
 
 ## Using APIs
 
