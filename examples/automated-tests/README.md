@@ -25,7 +25,7 @@ npm run ui-test
 
 This test will also generate screenshots. Take a look inside of the "examples/automated-tests/screenshots" folder.
 
-Note that the UI testing examples will only work with Chrome version 87. To work with the latest version of Chrome, run this where X is the version number:
+Note that the UI testing examples will only work with Chrome version 112. To work with the latest version of Chrome, run this where X is the version number:
 
 ```
 npm uninstall chromedriver
