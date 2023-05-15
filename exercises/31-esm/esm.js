@@ -1,3 +1,5 @@
+import greet from "./greet.js";
+import { multiply } from "./multiply.js";
 /**
  * The next two exercises uses ES modules (ESM).
  * ES modules allow you break up your code into multiple files (or modules), and then share code between different files.
