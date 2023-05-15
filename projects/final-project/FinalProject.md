@@ -218,7 +218,7 @@ For more examples, refer to the [GIPHY EXPLORER](https://developers.giphy.com/ex
 You are free to pursue another project idea, as long as it:
 
 - Meets the project requirements
-- You use at least one API. (You can browse [AnyAPI](https://any-api.com/) or [RapidAPI](https://rapidapi.com/hub) to discover other APIs.)
+- You use at least one API. (You can browse [AnyAPI](https://any-api.com/), [RapidAPI](https://rapidapi.com/hub) or these [public APIs](https://github.com/public-apis/public-apis) to discover other APIs.)
 - You are able to realistically complete the project or at least have something presentable to employers by the deadline.
 
 Please let Jamal and Matina known by **May 17**. You must emails them and provide them with your API's documentation. If they do not approve of your project, you will have to work with one of the suggested ideas above.
